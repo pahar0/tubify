@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "views/",
+        "public/",
+        "package.json",
+        "package-lock.json"
+    ]
+}

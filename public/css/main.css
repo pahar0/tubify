@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+
+body {
+    background-color: #121212;
+    color: whitesmoke;
+}
+
+.header {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.tracklist {
+    width: 500px;
+}

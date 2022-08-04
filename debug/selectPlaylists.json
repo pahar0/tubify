@@ -1,0 +1,1112 @@
+{
+    "href": "https://api.spotify.com/v1/users/kenkebeats/playlists?offset=0&limit=50",
+    "items": [
+        {
+            "collaborative": false,
+            "description": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXcDSGOY26zXVZ"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcDSGOY26zXVZ",
+            "id": "37i9dQZEVXcDSGOY26zXVZ",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/_pE0iLevsiBUXZVe2eVWMIPGiekByUcnP2A-ZSXOayIVqUKYkKvAbIo1lTrZBuppoOa2tJE6Fanr8LdOPLyBQjspUM3yM6Zt9StzU40nYKA=/MTE6NTU6MjJUMjEtODAtMg==",
+                    "width": null
+                }
+            ],
+            "name": "Discover Weekly",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MCwwMDAwMDAwMGQ3Njc4MDg4NTAxN2Y3NDZhZGJjMzZjMzgyNjNiYmYw",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcDSGOY26zXVZ/tracks",
+                "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZEVXcDSGOY26zXVZ"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1RZjwkkohnJhlXH5X0Ouhr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1RZjwkkohnJhlXH5X0Ouhr",
+            "id": "1RZjwkkohnJhlXH5X0Ouhr",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273433cac696e098147ebee1741ab67616d0000b2737bd6b720b15a53db9997df09ab67616d0000b273bf9eef6177c71f3972d09d0cab67616d0000b273cab232baa3207c1712da22f5",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273433cac696e098147ebee1741ab67616d0000b2737bd6b720b15a53db9997df09ab67616d0000b273bf9eef6177c71f3972d09d0cab67616d0000b273cab232baa3207c1712da22f5",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273433cac696e098147ebee1741ab67616d0000b2737bd6b720b15a53db9997df09ab67616d0000b273bf9eef6177c71f3972d09d0cab67616d0000b273cab232baa3207c1712da22f5",
+                    "width": 60
+                }
+            ],
+            "name": "GROOVE",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "ODY2LDgxZTdkZGMwZjczMTE5YWM5NmNlYTRhYTVmMDE5Njc1NTY2YzJiY2U=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1RZjwkkohnJhlXH5X0Ouhr/tracks",
+                "total": 778
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1RZjwkkohnJhlXH5X0Ouhr"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/5y1ZcTsuHdtm7UQIeOllFw"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5y1ZcTsuHdtm7UQIeOllFw",
+            "id": "5y1ZcTsuHdtm7UQIeOllFw",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273106fb80e3180dcb21cb93582ab67616d0000b273212e4c7bd7437a75436675b1ab67616d0000b273e578fec4d95848b399219604ab67616d0000b273ffcba47d909cc77428da2e4d",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273106fb80e3180dcb21cb93582ab67616d0000b273212e4c7bd7437a75436675b1ab67616d0000b273e578fec4d95848b399219604ab67616d0000b273ffcba47d909cc77428da2e4d",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273106fb80e3180dcb21cb93582ab67616d0000b273212e4c7bd7437a75436675b1ab67616d0000b273e578fec4d95848b399219604ab67616d0000b273ffcba47d909cc77428da2e4d",
+                    "width": 60
+                }
+            ],
+            "name": "🔥AFRO🔥",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTg1LDFlODVmMTQ5YTllYjFkMmE4OWU3YTRkM2EyN2U1OTcxYWM1NTVlYzc=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/5y1ZcTsuHdtm7UQIeOllFw/tracks",
+                "total": 169
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5y1ZcTsuHdtm7UQIeOllFw"
+        },
+        {
+            "collaborative": false,
+            "description": "Afrobeats sounds from the motherland • Powered by IG @nigeriamusic • Summer22 Hits",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4gfQDVOhAaPSeBjJ2N14H6"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4gfQDVOhAaPSeBjJ2N14H6",
+            "id": "4gfQDVOhAaPSeBjJ2N14H6",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebba6fc720e3911714cc868d123",
+                    "width": null
+                }
+            ],
+            "name": "Afrobeats Global • Drip Too Hard ler Gaou Mix • Burna Boy Ft J Balvin Rollercoaster  ",
+            "owner": {
+                "display_name": "AfrobeatsGlobalPlaylists",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/nigeriamusic"
+                },
+                "href": "https://api.spotify.com/v1/users/nigeriamusic",
+                "id": "nigeriamusic",
+                "type": "user",
+                "uri": "spotify:user:nigeriamusic"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NTkxMyxkYzlmMDg4NWI4NmJkZDM2ODhjZjBmZTUwMzhiZjc4MGUxODA3MjI4",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4gfQDVOhAaPSeBjJ2N14H6/tracks",
+                "total": 181
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4gfQDVOhAaPSeBjJ2N14H6"
+        },
+        {
+            "collaborative": false,
+            "description": "songs that will mix perfectly when played in repeat (song) with the spotify crossfade setting set on 12 seconds",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4qMmpiwiB2qguBvZX77J7U"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4qMmpiwiB2qguBvZX77J7U",
+            "id": "4qMmpiwiB2qguBvZX77J7U",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2735ef878a782c987d38d82b605ab67616d0000b273720be50074ccc55c97cbfc6fab67616d0000b27387327e42b22bcac7a3aa6548ab67616d0000b273ebb094dd871874036a8056db",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2735ef878a782c987d38d82b605ab67616d0000b273720be50074ccc55c97cbfc6fab67616d0000b27387327e42b22bcac7a3aa6548ab67616d0000b273ebb094dd871874036a8056db",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2735ef878a782c987d38d82b605ab67616d0000b273720be50074ccc55c97cbfc6fab67616d0000b27387327e42b22bcac7a3aa6548ab67616d0000b273ebb094dd871874036a8056db",
+                    "width": 60
+                }
+            ],
+            "name": "perfect mix crossfade 12 seconds loop",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjksMmU1ZDhjMTliODhiYjM2YTIyNzI4ZTA5NWY4ZWQwMjBhY2NlNDllNA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4qMmpiwiB2qguBvZX77J7U/tracks",
+                "total": 21
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4qMmpiwiB2qguBvZX77J7U"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/69byM4ccuxDLZoUnlm1G73"
+            },
+            "href": "https://api.spotify.com/v1/playlists/69byM4ccuxDLZoUnlm1G73",
+            "id": "69byM4ccuxDLZoUnlm1G73",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b27356b73ef6d588a89631976c13ab67616d0000b27356be8f9dab23937870ac6684ab67616d0000b273a2fc41b0dd6ce4f0d16a4c46ab67616d0000b273a50b85c857e21bf1d07529fa",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b27356b73ef6d588a89631976c13ab67616d0000b27356be8f9dab23937870ac6684ab67616d0000b273a2fc41b0dd6ce4f0d16a4c46ab67616d0000b273a50b85c857e21bf1d07529fa",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b27356b73ef6d588a89631976c13ab67616d0000b27356be8f9dab23937870ac6684ab67616d0000b273a2fc41b0dd6ce4f0d16a4c46ab67616d0000b273a50b85c857e21bf1d07529fa",
+                    "width": 60
+                }
+            ],
+            "name": "friends favs",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "OCw4MGE4ZjJjNDBhYmI5OGNiMjliNjAwZmQ5MDMyM2Q2YWEwNDNjMjhm",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/69byM4ccuxDLZoUnlm1G73/tracks",
+                "total": 4
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:69byM4ccuxDLZoUnlm1G73"
+        },
+        {
+            "collaborative": true,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/19A9chzj13gn2LLzs7WTyB"
+            },
+            "href": "https://api.spotify.com/v1/playlists/19A9chzj13gn2LLzs7WTyB",
+            "id": "19A9chzj13gn2LLzs7WTyB",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b27315c3c672558092e9776c391dab67616d0000b273534add2468f44d0eb10652d7ab67616d0000b27389348170e785c4529113722dab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b27315c3c672558092e9776c391dab67616d0000b273534add2468f44d0eb10652d7ab67616d0000b27389348170e785c4529113722dab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b27315c3c672558092e9776c391dab67616d0000b273534add2468f44d0eb10652d7ab67616d0000b27389348170e785c4529113722dab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 60
+                }
+            ],
+            "name": "PAJAVERO",
+            "owner": {
+                "display_name": "Lau",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/judktn3ofoo1ytsqp70xaso4n"
+                },
+                "href": "https://api.spotify.com/v1/users/judktn3ofoo1ytsqp70xaso4n",
+                "id": "judktn3ofoo1ytsqp70xaso4n",
+                "type": "user",
+                "uri": "spotify:user:judktn3ofoo1ytsqp70xaso4n"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "ODMsYmY2ODMwYzJkZTdkZTZhOGY0ODg0ODI1ZWYyYzYxZTFiOWNiMzM2Ng==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/19A9chzj13gn2LLzs7WTyB/tracks",
+                "total": 65
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:19A9chzj13gn2LLzs7WTyB"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3vhWZbbUaPhtCFEEmWgHMr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3vhWZbbUaPhtCFEEmWgHMr",
+            "id": "3vhWZbbUaPhtCFEEmWgHMr",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273774decc5e3d57079627a02beab67616d0000b27389fc1435785e999ac866c426ab67616d0000b273e50104aa3b8a8fb0c362bf47ab67616d0000b273fd714be9b14a7bbdea22d9ed",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273774decc5e3d57079627a02beab67616d0000b27389fc1435785e999ac866c426ab67616d0000b273e50104aa3b8a8fb0c362bf47ab67616d0000b273fd714be9b14a7bbdea22d9ed",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273774decc5e3d57079627a02beab67616d0000b27389fc1435785e999ac866c426ab67616d0000b273e50104aa3b8a8fb0c362bf47ab67616d0000b273fd714be9b14a7bbdea22d9ed",
+                    "width": 60
+                }
+            ],
+            "name": "PEPEGAJAM",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjMsZTU3ZjczNGI1NDRlZmUxOTdhMTlhMTBlMzM4YzdkMmM1MDcyNjM3YQ==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3vhWZbbUaPhtCFEEmWgHMr/tracks",
+                "total": 21
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3vhWZbbUaPhtCFEEmWgHMr"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2VsTPPvBwAUhobcChB8EXd"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2VsTPPvBwAUhobcChB8EXd",
+            "id": "2VsTPPvBwAUhobcChB8EXd",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2733979878917bb0159fa35b0acab67616d0000b2735d46b069ef33382b235b296aab67616d0000b273838380761b418699c935e058ab67616d0000b273a355055c4563c6abc0cecd7c",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2733979878917bb0159fa35b0acab67616d0000b2735d46b069ef33382b235b296aab67616d0000b273838380761b418699c935e058ab67616d0000b273a355055c4563c6abc0cecd7c",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2733979878917bb0159fa35b0acab67616d0000b2735d46b069ef33382b235b296aab67616d0000b273838380761b418699c935e058ab67616d0000b273a355055c4563c6abc0cecd7c",
+                    "width": 60
+                }
+            ],
+            "name": "YASSS 🎷🎷",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTMsYTYwYmMzYzVmNmU0MWIzYjBiNGEwZjI2ZDdlN2IzMGVjNTdlYjg1OQ==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2VsTPPvBwAUhobcChB8EXd/tracks",
+                "total": 12
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2VsTPPvBwAUhobcChB8EXd"
+        },
+        {
+            "collaborative": false,
+            "description": "al loro pavo",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/5LR7serotU1Qyr03FpPQvf"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5LR7serotU1Qyr03FpPQvf",
+            "id": "5LR7serotU1Qyr03FpPQvf",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb279d8a3126186a8bac222353",
+                    "width": null
+                }
+            ],
+            "name": "🦜 temasos 🦚",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTE3MCxkMGU4OWZiYzg4YzhhYjBmNWU2YTQ5NmFlZTgyNjZhNzdiZGY2MzY1",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/5LR7serotU1Qyr03FpPQvf/tracks",
+                "total": 1041
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5LR7serotU1Qyr03FpPQvf"
+        },
+        {
+            "collaborative": false,
+            "description": "Una selección con los mejores exponentes de la salsa.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3levwZPVq41p5s9CABoTHH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3levwZPVq41p5s9CABoTHH",
+            "id": "3levwZPVq41p5s9CABoTHH",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbf503b4fb4265c451dac40eb3",
+                    "width": null
+                }
+            ],
+            "name": "Salsa Power",
+            "owner": {
+                "display_name": "vicdeal",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/vicdeal"
+                },
+                "href": "https://api.spotify.com/v1/users/vicdeal",
+                "id": "vicdeal",
+                "type": "user",
+                "uri": "spotify:user:vicdeal"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTk4LDhiNzUxZWI0YzI0ZTNkYjA3MDM0ZGY2NDNkYWJhN2U0YWQzYmEwZmI=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3levwZPVq41p5s9CABoTHH/tracks",
+                "total": 164
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3levwZPVq41p5s9CABoTHH"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1FIaeHOt1I7zxqkcjHoKIY"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1FIaeHOt1I7zxqkcjHoKIY",
+            "id": "1FIaeHOt1I7zxqkcjHoKIY",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2730094991318c65a77ee2bbedeab67616d0000b273157bf6b6c046bbb3e7907eb0ab67616d0000b2732b77dbfe33f66cd9b21b35baab67616d0000b273fc1bc1cf80c431c2bdbde601",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2730094991318c65a77ee2bbedeab67616d0000b273157bf6b6c046bbb3e7907eb0ab67616d0000b2732b77dbfe33f66cd9b21b35baab67616d0000b273fc1bc1cf80c431c2bdbde601",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2730094991318c65a77ee2bbedeab67616d0000b273157bf6b6c046bbb3e7907eb0ab67616d0000b2732b77dbfe33f66cd9b21b35baab67616d0000b273fc1bc1cf80c431c2bdbde601",
+                    "width": 60
+                }
+            ],
+            "name": "ind",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NDcsNTgwMWI5NTFlNTRiZmU1YzE4Y2JiMTg2MmMxNDkxMTlmMzgyNDFhZA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1FIaeHOt1I7zxqkcjHoKIY/tracks",
+                "total": 39
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1FIaeHOt1I7zxqkcjHoKIY"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/19yQ0POFXVfecBu9N6HmdY"
+            },
+            "href": "https://api.spotify.com/v1/playlists/19yQ0POFXVfecBu9N6HmdY",
+            "id": "19yQ0POFXVfecBu9N6HmdY",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbffdd10218c75d3d2eeaa98e0",
+                    "width": null
+                }
+            ],
+            "name": "🍑SHAKE THAT ASS🍑",
+            "owner": {
+                "display_name": "Lau",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/judktn3ofoo1ytsqp70xaso4n"
+                },
+                "href": "https://api.spotify.com/v1/users/judktn3ofoo1ytsqp70xaso4n",
+                "id": "judktn3ofoo1ytsqp70xaso4n",
+                "type": "user",
+                "uri": "spotify:user:judktn3ofoo1ytsqp70xaso4n"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTQxLGI4NmQ1NzNlODE2NzBiYmE1ZWNjY2U2YjVkYmYwNmMxOWM0MTRmYTA=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/19yQ0POFXVfecBu9N6HmdY/tracks",
+                "total": 129
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:19yQ0POFXVfecBu9N6HmdY"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/5PFUJZh3MrCOvmkd3TNRXG"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5PFUJZh3MrCOvmkd3TNRXG",
+            "id": "5PFUJZh3MrCOvmkd3TNRXG",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb0a4f5a3f091b55ee52b771ae",
+                    "width": null
+                }
+            ],
+            "name": "🌊Vibes ",
+            "owner": {
+                "display_name": "AriSwims",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/gabemlevy"
+                },
+                "href": "https://api.spotify.com/v1/users/gabemlevy",
+                "id": "gabemlevy",
+                "type": "user",
+                "uri": "spotify:user:gabemlevy"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "Njk3LDM0NmFiODNkYWE3NWZlY2ZhY2FiZjkwYzgyY2MzY2QwYzljN2I0ZmE=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/5PFUJZh3MrCOvmkd3TNRXG/tracks",
+                "total": 592
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5PFUJZh3MrCOvmkd3TNRXG"
+        },
+        {
+            "collaborative": true,
+            "description": "añadid la canción que más triste os ponga xfa pero sólo una por persona gracias",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2xqlrW9S8gje5oReEI2jSx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2xqlrW9S8gje5oReEI2jSx",
+            "id": "2xqlrW9S8gje5oReEI2jSx",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2730db3901606954f424070ff01ab67616d0000b2736745a70abfc25f45612c4d32ab67616d0000b273c403c5700c5a0d6f2fe2d8f1ab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2730db3901606954f424070ff01ab67616d0000b2736745a70abfc25f45612c4d32ab67616d0000b273c403c5700c5a0d6f2fe2d8f1ab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2730db3901606954f424070ff01ab67616d0000b2736745a70abfc25f45612c4d32ab67616d0000b273c403c5700c5a0d6f2fe2d8f1ab67616d0000b273de3c04b5fc750b68899b20a9",
+                    "width": 60
+                }
+            ],
+            "name": "la penita de mis personas",
+            "owner": {
+                "display_name": "aomameselina",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/aomameselina"
+                },
+                "href": "https://api.spotify.com/v1/users/aomameselina",
+                "id": "aomameselina",
+                "type": "user",
+                "uri": "spotify:user:aomameselina"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTIyLDk3NzNmNTUxNDQ5NmQyMWUxODFiYzMwY2FkMTZlZTQwMDc5ZWQ4NWI=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2xqlrW9S8gje5oReEI2jSx/tracks",
+                "total": 95
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2xqlrW9S8gje5oReEI2jSx"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/5xiOP9XFJMNWIUFHS4dYKE"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5xiOP9XFJMNWIUFHS4dYKE",
+            "id": "5xiOP9XFJMNWIUFHS4dYKE",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2739a357ea27ac10c8ded0b5026ab67616d0000b273a1ffb45c4e8a790cd77e1c33ab67616d0000b273b5ef90a1a20cf8c1e431e10dab67616d0000b273cf9f228f653cd92822fedfb1",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2739a357ea27ac10c8ded0b5026ab67616d0000b273a1ffb45c4e8a790cd77e1c33ab67616d0000b273b5ef90a1a20cf8c1e431e10dab67616d0000b273cf9f228f653cd92822fedfb1",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2739a357ea27ac10c8ded0b5026ab67616d0000b273a1ffb45c4e8a790cd77e1c33ab67616d0000b273b5ef90a1a20cf8c1e431e10dab67616d0000b273cf9f228f653cd92822fedfb1",
+                    "width": 60
+                }
+            ],
+            "name": "Be Open ",
+            "owner": {
+                "display_name": "Nestreya",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/giycyya0e66j6kptkn0zqjpmb"
+                },
+                "href": "https://api.spotify.com/v1/users/giycyya0e66j6kptkn0zqjpmb",
+                "id": "giycyya0e66j6kptkn0zqjpmb",
+                "type": "user",
+                "uri": "spotify:user:giycyya0e66j6kptkn0zqjpmb"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NjQsZmY2OTMyNWQ3ZTU2NGQ3NjBkYjkzZGQ3ZmVlNWMyMTMyNDQ1OTI3Mw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/5xiOP9XFJMNWIUFHS4dYKE/tracks",
+                "total": 63
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5xiOP9XFJMNWIUFHS4dYKE"
+        },
+        {
+            "collaborative": false,
+            "description": "The songs you loved most this year, all wrapped up.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1EtkPWlNb4nNqj"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtkPWlNb4nNqj",
+            "id": "37i9dQZF1EtkPWlNb4nNqj",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://lineup-images.scdn.co/your-top-songs-2019_LARGE-en.jpg",
+                    "width": null
+                }
+            ],
+            "name": "Your Top Songs 2019",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjYyNjk2NTMsMDAwMDAwMDA0YTQxZDg5ZDY2NjNlODE4N2Q5OTY5MDhlNGVkOGI0Mw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtkPWlNb4nNqj/tracks",
+                "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1EtkPWlNb4nNqj"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/7sPyyksq4npZR5UiP4QzC4"
+            },
+            "href": "https://api.spotify.com/v1/playlists/7sPyyksq4npZR5UiP4QzC4",
+            "id": "7sPyyksq4npZR5UiP4QzC4",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273eaa5b18552a3e2e9f95eb9ca",
+                    "width": 640
+                }
+            ],
+            "name": "Favoritas de la radio",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NiwwYTlmMjk2MGU2YTI5MmFmY2M0YjQwMDkxNDJiMTlkZTRiNTY0M2M3",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/7sPyyksq4npZR5UiP4QzC4/tracks",
+                "total": 5
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:7sPyyksq4npZR5UiP4QzC4"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/7t31G4qsrnLtXfFs1MN0ry"
+            },
+            "href": "https://api.spotify.com/v1/playlists/7t31G4qsrnLtXfFs1MN0ry",
+            "id": "7t31G4qsrnLtXfFs1MN0ry",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb012f5610a83cfcd24d85fef2",
+                    "width": null
+                }
+            ],
+            "name": "💧 LIQUID DNB 💧",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTcsNjQ5ZmIzYzU2N2NjNzBiMWQ3OGU5ZjhmYzdlMzI3OTYyOWY3YjYzNw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/7t31G4qsrnLtXfFs1MN0ry/tracks",
+                "total": 11
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:7t31G4qsrnLtXfFs1MN0ry"
+        },
+        {
+            "collaborative": false,
+            "description": "This is the type of music that will help you flow throughout  the day. Here is a mix of African music such as Afrobeat, East African Music and Anything with an Afro vibe. ",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/627imkYF3C9kdJvMFQuYGT"
+            },
+            "href": "https://api.spotify.com/v1/playlists/627imkYF3C9kdJvMFQuYGT",
+            "id": "627imkYF3C9kdJvMFQuYGT",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbc7e607eefa9730ac323d5320",
+                    "width": null
+                }
+            ],
+            "name": "AFROFLOW",
+            "owner": {
+                "display_name": "Nestreya",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/giycyya0e66j6kptkn0zqjpmb"
+                },
+                "href": "https://api.spotify.com/v1/users/giycyya0e66j6kptkn0zqjpmb",
+                "id": "giycyya0e66j6kptkn0zqjpmb",
+                "type": "user",
+                "uri": "spotify:user:giycyya0e66j6kptkn0zqjpmb"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "ODA5LDhhYmVmN2YzNDg5YWFlMDgwM2MwZWQ4OTVhMWMwYjA1MzQwMTdhZjE=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/627imkYF3C9kdJvMFQuYGT/tracks",
+                "total": 111
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:627imkYF3C9kdJvMFQuYGT"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2h8CNdE6nbTcDVIf2NRPVF"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2h8CNdE6nbTcDVIf2NRPVF",
+            "id": "2h8CNdE6nbTcDVIf2NRPVF",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb21f4f4eac553a679f2e353b5",
+                    "width": null
+                }
+            ],
+            "name": "💃 SUGARRR",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "ODEsMTIyMjMzOTBkNjUzNDE0YTVlMDliMmYyN2EwOTM5ODg3MjgwN2E4Yw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2h8CNdE6nbTcDVIf2NRPVF/tracks",
+                "total": 70
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2h8CNdE6nbTcDVIf2NRPVF"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4q7Oy1L3R4bUcSFns4TXPy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4q7Oy1L3R4bUcSFns4TXPy",
+            "id": "4q7Oy1L3R4bUcSFns4TXPy",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbc88cdbf72626961acc120d3e",
+                    "width": null
+                }
+            ],
+            "name": "👏👏",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTUsODkyMGVmOGVkYWJiMzA3ZjliMDBmZWQ2ZWNmOWYyMDA0NGY4MjdlZA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4q7Oy1L3R4bUcSFns4TXPy/tracks",
+                "total": 7
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4q7Oy1L3R4bUcSFns4TXPy"
+        },
+        {
+            "collaborative": true,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/7CQnvDyB7tPyRN7RU1ev9X"
+            },
+            "href": "https://api.spotify.com/v1/playlists/7CQnvDyB7tPyRN7RU1ev9X",
+            "id": "7CQnvDyB7tPyRN7RU1ev9X",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273444b2dff2fee6318bca7279dab67616d0000b2734661cf765439018ebb7e0009ab67616d0000b2734b0cbeb92b4fde0012b64c24ab67616d0000b273ecf695f7c05a59f91da54d40",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273444b2dff2fee6318bca7279dab67616d0000b2734661cf765439018ebb7e0009ab67616d0000b2734b0cbeb92b4fde0012b64c24ab67616d0000b273ecf695f7c05a59f91da54d40",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273444b2dff2fee6318bca7279dab67616d0000b2734661cf765439018ebb7e0009ab67616d0000b2734b0cbeb92b4fde0012b64c24ab67616d0000b273ecf695f7c05a59f91da54d40",
+                    "width": 60
+                }
+            ],
+            "name": "TONTON",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTIyLDAwZjYzMzRjNmYyMzM5ZTczNjc3NjNlNTc3NmNhMGZlYjVlNjViNmQ=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/7CQnvDyB7tPyRN7RU1ev9X/tracks",
+                "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:7CQnvDyB7tPyRN7RU1ev9X"
+        },
+        {
+            "collaborative": true,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2FpIccqtT8y88pgfId3HIe"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2FpIccqtT8y88pgfId3HIe",
+            "id": "2FpIccqtT8y88pgfId3HIe",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb1bd6ad72a6b966e9b48ac8f6",
+                    "width": null
+                }
+            ],
+            "name": "musica del rollo que nos husta a nosothro",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjgsYjFjMTkyYjMzNTgxYTFjMDRmYmM2MDVmZDQ5MGM0ZDE4ZDIxYzI1OQ==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2FpIccqtT8y88pgfId3HIe/tracks",
+                "total": 20
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2FpIccqtT8y88pgfId3HIe"
+        },
+        {
+            "collaborative": false,
+            "description": "selección de los mejores temitas para arreglarte con tu amiga",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/35P4y8fKTVQHneI49n7TcG"
+            },
+            "href": "https://api.spotify.com/v1/playlists/35P4y8fKTVQHneI49n7TcG",
+            "id": "35P4y8fKTVQHneI49n7TcG",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb00adcec0c5322fc386ae47a1",
+                    "width": null
+                }
+            ],
+            "name": "GANG",
+            "owner": {
+                "display_name": "perezjamaf",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/perezjamaf"
+                },
+                "href": "https://api.spotify.com/v1/users/perezjamaf",
+                "id": "perezjamaf",
+                "type": "user",
+                "uri": "spotify:user:perezjamaf"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NDA4LDc2NDE3NWM5YjU2MmY5ODY2MTRjMTQyM2RhNjJkZTBjNmI4MjUyZTY=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/35P4y8fKTVQHneI49n7TcG/tracks",
+                "total": 358
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:35P4y8fKTVQHneI49n7TcG"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/7A8u6gyPglFKa84p7TLdUi"
+            },
+            "href": "https://api.spotify.com/v1/playlists/7A8u6gyPglFKa84p7TLdUi",
+            "id": "7A8u6gyPglFKa84p7TLdUi",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2734d48e433c4bbd5d7cb8cff88ab67616d0000b2738b27d35aa2c6dcf99895d664ab67616d0000b273d419ed4f1e89669ce14bd369ab67616d0000b273d7de90b4628456f13fe629d2",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2734d48e433c4bbd5d7cb8cff88ab67616d0000b2738b27d35aa2c6dcf99895d664ab67616d0000b273d419ed4f1e89669ce14bd369ab67616d0000b273d7de90b4628456f13fe629d2",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2734d48e433c4bbd5d7cb8cff88ab67616d0000b2738b27d35aa2c6dcf99895d664ab67616d0000b273d419ed4f1e89669ce14bd369ab67616d0000b273d7de90b4628456f13fe629d2",
+                    "width": 60
+                }
+            ],
+            "name": "Mis pistas de Shazam",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTEzLGE2ZWNmYWZiMTc5MGU3MGVlZTc2N2Q1MGVlMGExNDNkNjk2N2I0NWY=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/7A8u6gyPglFKa84p7TLdUi/tracks",
+                "total": 159
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:7A8u6gyPglFKa84p7TLdUi"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6s5NKXcVDXq2ndaZI7lhbh"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6s5NKXcVDXq2ndaZI7lhbh",
+            "id": "6s5NKXcVDXq2ndaZI7lhbh",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b27373f85e8b4338d2aa07f59f3aab67616d0000b2739aa077d205702b30d5ff980bab67616d0000b273c3b4aa0b7faac3a71181720e",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b27373f85e8b4338d2aa07f59f3aab67616d0000b2739aa077d205702b30d5ff980bab67616d0000b273c3b4aa0b7faac3a71181720e",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b27373f85e8b4338d2aa07f59f3aab67616d0000b2739aa077d205702b30d5ff980bab67616d0000b273c3b4aa0b7faac3a71181720e",
+                    "width": 60
+                }
+            ],
+            "name": "Mis pistas de Shazam",
+            "owner": {
+                "display_name": "paharo",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/kenkebeats"
+                },
+                "href": "https://api.spotify.com/v1/users/kenkebeats",
+                "id": "kenkebeats",
+                "type": "user",
+                "uri": "spotify:user:kenkebeats"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NjEsMTk4ZmQ5ZDNjNDk4Nzc3ZmY4Nzk5MzcxZGRkY2Y5M2NlODQzNTE2NA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6s5NKXcVDXq2ndaZI7lhbh/tracks",
+                "total": 143
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6s5NKXcVDXq2ndaZI7lhbh"
+        }
+    ],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 27
+}
