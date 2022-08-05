@@ -50,16 +50,16 @@ $(document).ready(function (e) {
         $.ajax({
             type: 'POST',
             url: '/selectPlaylists',
-            data: JSON.stringify({ 'playlists': playlists }),
             contentType: 'application/json',
             headers: {
                 'CSRF-Token': csrfToken
-            }
+            },
+            data: JSON.stringify({ 'playlists': playlists })
         }).done((response) => {
             if (!response.error) {
-
+                console.log(response);
+                window.location.replace('/')
             } else {
-                console.log(response)
             }
         }).fail(function (response, status) {
             console.log(response)

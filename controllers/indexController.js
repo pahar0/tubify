@@ -115,9 +115,12 @@ const indexGenerateTopSongsPlaylist = async (req, res, next) => {
 
 
 const indexRender = (req, res, next) => {
-    //return res.send(res.locals.getUserPlaylists)
-    return res.render('index', { userPlaylists: res.locals.getUserPlaylists, csrfToken: req.csrfToken() })
-
+    console.log(req.session.playlistsDetails);
+    if (req.session.playlistsDetails) {
+        return res.render('index', { playlistsDetails: req.session.playlistsDetails })
+    } else {
+        return res.redirect('/selectPlaylists')
+    }
 }
 
 module.exports = { indexDebug, indexGeneratePlaylists, indexGenerateTopSongsPlaylist, indexRender }

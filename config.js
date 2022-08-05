@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
-    debug: true,
+    debug: false,
     appPort: 4000,
     spotifyClientId: process.env.SPOTIFY_API_ID,
     spotifyClientSecret: process.env.SPOTIFY_API_SECRET,

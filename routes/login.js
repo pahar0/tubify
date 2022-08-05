@@ -30,7 +30,6 @@ const login = async (req, res) => {
             req.session.spotifyTokens = { ...resp.data, expires_date: ((Date.now() / 1000) + resp.data.expires_in) }
             //req.session.cookie.expires = new Date(Date.now() + (resp.data.expires_in * 1000))
             //req.session.cookie.maxAge = (resp.data.expires_in * 1000)
-            return res.redirect('/selectPlaylists')
             return res.redirect('/')
         } catch (err) {
             console.log(err);

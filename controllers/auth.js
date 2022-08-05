@@ -1,6 +1,9 @@
 const authIsLoggedIn = (req, res, next) => {
-    if (!req.session.isLoggedIn)
-        return res.redirect('/login') // change to /
+    if (!req.session.isLoggedIn) {
+        if (req.method == "POST")
+            return res.send({ error: 'not logged in' })
+        return res.redirect('/login')
+    }
     next()
 }
 

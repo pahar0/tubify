@@ -143,7 +143,7 @@ function onYouTubeIframeAPIReady() {
             $('.spotify-controls-buttons-play, .player-button-play').find('img').attr('src', '/images/player/pause.png')
 
             if (youTubePlayer.hasOwnProperty('getPlayerState')) {
-                youTubePlayer.setVolume($('.player-volume-slider .slider').val())
+                youTubePlayer.setVolume($('.player-settings-slider .slider').val())
             }
         }
 
@@ -324,14 +324,14 @@ $(document).ready(function (e) {
                 .css('filter', 'invert(65%) sepia(22%) saturate(1536%) hue-rotate(89deg) brightness(98%) contrast(93%)')
                 .find('.player-settings-speed-perc')
                 .html(speedPerc + 'x')
-            youTubePlayer.setPlaybackRate(1)
+            youTubePlayer.setPlaybackRate(speedPerc)
         } else {
             $(this)
                 .css('background-image', 'url("/images/player/speed.png")')
                 .css('filter', 'invert(100%) sepia(100%) saturate(0%) hue-rotate(238deg) brightness(104%) contrast(103%)')
                 .find('.player-settings-speed-perc')
                 .html('')
-            youTubePlayer.setPlaybackRate(speedPerc)
+            youTubePlayer.setPlaybackRate(1)
         }
     })
 
