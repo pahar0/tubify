@@ -16,7 +16,7 @@ function playerInfo() {
         if (youTubePlayer.getPlayerState() !== 2) {
             let current = youTubePlayer.getCurrentTime()
             let duration = youTubePlayer.getDuration()
-            let currentPercent = (current && duration ? current * 100 / duration : 0)
+            let currentPercent = current && duration ? (current * 100) / duration : 0
             $('.player-slider-currentTime').html(secondsToTime(current))
             $('.player-slider-songLength').html(secondsToTime(duration))
             if (!dragging) {
@@ -69,8 +69,6 @@ const prevVideo = () => {
     refreshInfo(previousSong)
 }
 
-
-
 const nextVideo = (click = false) => {
     lastDirection = 0
     if (click) {
@@ -91,18 +89,16 @@ const nextVideo = (click = false) => {
             }
         }
     }
-    if (playedSongsIndexes.slice(-1)[0] !== playlistCurrentSongIndex)
-        playedSongsIndexes.push(playlistCurrentSongIndex)
+    if (playedSongsIndexes.slice(-1)[0] !== playlistCurrentSongIndex) playedSongsIndexes.push(playlistCurrentSongIndex)
     youTubePlayer.loadVideoById(playlistYoutubeIDS[playlistCurrentSongIndex])
     refreshInfo()
 }
 
 function onYouTubeIframeAPIReady() {
-    'use strict';
+    'use strict'
 
-    var height = 151;
-    var width = 270;
-
+    var height = 151
+    var width = 270
 
     function onError(event) {
         // AGE RESTRICTED VIDEO
@@ -115,12 +111,10 @@ function onYouTubeIframeAPIReady() {
         }
     }
 
-
     function onReady(event) {
         //var player = event.target;
         //var iframe = $('#YouTube-player')
     }
-
 
     function onStateChange(event) {
         // -1 = YT.PlayerState.
@@ -132,12 +126,10 @@ function onYouTubeIframeAPIReady() {
 
         // SKIP ON SKIPSONG = 2
         if (event.target.getPlayerState() == -1) {
-
         }
 
         // TODO: add logic for fadein next song
-        if (event.target.getPlayerState() == 0)
-            nextVideo()
+        if (event.target.getPlayerState() == 0) nextVideo()
 
         if (event.target.getPlayerState() == 1) {
             $('.spotify-controls-buttons-play, .player-button-play').find('img').attr('src', '/images/player/pause.png')
@@ -151,63 +143,58 @@ function onYouTubeIframeAPIReady() {
             $('.spotify-controls-buttons-play, .player-button-play').find('img').attr('src', '/images/player/play.png')
         }
 
-
         // RESET SKIPSONG ON BUFFERING
         if (event.target.getPlayerState() == 3) {
-
         }
 
         console.log(event.target.getPlayerState())
     }
 
-
-    youTubePlayer = new YT.Player('YouTube-player',
-        {
-            videoId: playlistYoutubeIDS[0],
-            height: height,
-            width: width,
-            playerVars: {
-                'autohide': 1,
-                'cc_load_policy': 0,
-                'controls': 0,
-                'disablekb': 0,
-                'iv_load_policy': 3,
-                'modestbranding': 1,
-            },
-            events: {
-                'onError': onError,
-                'onReady': onReady,
-                'onStateChange': onStateChange
-            }
-        });
+    youTubePlayer = new YT.Player('YouTube-player', {
+        videoId: playlistYoutubeIDS[0],
+        height: height,
+        width: width,
+        playerVars: {
+            autohide: 1,
+            cc_load_policy: 0,
+            controls: 0,
+            disablekb: 0,
+            iv_load_policy: 3,
+            modestbranding: 1,
+        },
+        events: {
+            onError: onError,
+            onReady: onReady,
+            onStateChange: onStateChange,
+        },
+    })
 
     playedSongsIndexes.push(0)
 }
 
 $(document).ready(function (e) {
-
     $(document).on('dblclick', '.spotify-sidebar-video', function (e) {
-        var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+        var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen
         if (requestFullScreen) {
-            requestFullScreen.bind(iframe)();
+            requestFullScreen.bind(iframe)()
         }
     })
 
-    $(document).on('mouseenter', '.spotify-track-row', function (e) {
-        if ($(this).attr('data-index') == playlistCurrentSongIndex) {
-            $(this).find('.spotify-play-button').addClass('spotify-play-button-pause').html('')
-        } else {
-            $(this).find('.spotify-play-button').addClass('spotify-play-button-play').html('')
-        }
-
-    }).on('mouseleave', '.spotify-track-row', function () {
-        if ($(this).attr('data-index') == playlistCurrentSongIndex) {
-            $(this).find('.spotify-play-button').removeClass('spotify-play-button-pause').html($(this).attr("data-index"))
-        } else {
-            $(this).find('.spotify-play-button').removeClass('spotify-play-button-play').html($(this).attr("data-index"))
-        }
-    })
-
+    $(document)
+        .on('mouseenter', '.spotify-track-row', function (e) {
+            if ($(this).attr('data-index') == playlistCurrentSongIndex) {
+                $(this).find('.spotify-play-button').addClass('spotify-play-button-pause').html('')
+            } else {
+                $(this).find('.spotify-play-button').addClass('spotify-play-button-play').html('')
+            }
+        })
+        .on('mouseleave', '.spotify-track-row', function () {
+            if ($(this).attr('data-index') == playlistCurrentSongIndex) {
+                $(this).find('.spotify-play-button').removeClass('spotify-play-button-pause').html($(this).attr('data-index'))
+            } else {
+                $(this).find('.spotify-play-button').removeClass('spotify-play-button-play').html($(this).attr('data-index'))
+            }
+        })
 
     $(document).on('click', '.spotify-play-button', function (e) {
         //console.log(playedSongsIndexes, playedSongsIndexes.slice(-1)[0], playlistCurrentSongIndex)
@@ -227,7 +214,6 @@ $(document).ready(function (e) {
         }
     })
 
-
     $(document).on('click', '.player-button-shuffle', function (e) {
         shuffleMode = !shuffleMode
         if (shuffleMode) {
@@ -237,9 +223,6 @@ $(document).ready(function (e) {
             $(this).css('background-color', '#FFF')
         }
     })
-
-
-
 
     $(document).on('click', '.spotify-controls-buttons-play, .player-button-play', function (e) {
         if (youTubePlayer.hasOwnProperty('getPlayerState')) {
@@ -251,11 +234,10 @@ $(document).ready(function (e) {
                 youTubePlayer.playVideo()
                 refreshInfo()
             } else {
-                console.log('estado => ' + youTubePlayer.getPlayerState());
+                console.log('estado => ' + youTubePlayer.getPlayerState())
             }
-
         } else {
-            console.log("no getPlayerState");
+            console.log('no getPlayerState')
         }
     })
 
@@ -272,13 +254,15 @@ $(document).ready(function (e) {
         if (repeatMode > 2) repeatMode = 0
 
         if (repeatMode == 0) {
-            $(this).css('background-color', '#FFF')
+            $(this)
+                .css('background-color', '#FFF')
                 .css('mask', 'url("/images/player/repeat.png") center/contain no-repeat')
                 .css('-webkit-mask', 'url("/images/player/repeat.png") center/contain no-repeat')
         } else if (repeatMode == 1) {
             $(this).css('background-color', '#1ed760')
         } else if (repeatMode == 2) {
-            $(this).css('mask', 'url("/images/player/repeat-once.png") center/contain no-repeat')
+            $(this)
+                .css('mask', 'url("/images/player/repeat-once.png") center/contain no-repeat')
                 .css('-webkit-mask', 'url("/images/player/repeat-once.png") center/contain no-repeat')
         }
     })
@@ -291,21 +275,21 @@ $(document).ready(function (e) {
         $(this).css('background-size', `${$(this).val()}% 100%`)
     })
 
-
-
     $(document).on('mouseup', '.player-slider-container .slider', function (e) {
         dragging = false
-        youTubePlayer.seekTo($(this).val() * youTubePlayer.getDuration() / 100, true)
+        youTubePlayer.seekTo(($(this).val() * youTubePlayer.getDuration()) / 100, true)
     })
 
     $(document).on('click', '.player-settings-speed-less', function (e) {
         if (speedPerc !== 0.7) {
-            speedPerc = Number(parseFloat(speedPerc - 0.1).toFixed(1));
+            speedPerc = Number(parseFloat(speedPerc - 0.1).toFixed(1))
             youTubePlayer.setPlaybackRate(speedPerc)
         }
 
         if (speedEnabled) {
-            $('.player-settings-speed-reset').find('.player-settings-speed-perc').html(speedPerc + 'x')
+            $('.player-settings-speed-reset')
+                .find('.player-settings-speed-perc')
+                .html(speedPerc + 'x')
         } else {
             speedEnabled = !speedEnabled
             $('.player-settings-speed-reset')
@@ -337,12 +321,14 @@ $(document).ready(function (e) {
 
     $(document).on('click', '.player-settings-speed-more', function (e) {
         if (speedPerc !== 1.3) {
-            speedPerc = Number(parseFloat(speedPerc + 0.1).toFixed(1));
+            speedPerc = Number(parseFloat(speedPerc + 0.1).toFixed(1))
             youTubePlayer.setPlaybackRate(speedPerc)
         }
 
         if (speedEnabled) {
-            $('.player-settings-speed-reset').find('.player-settings-speed-perc').html(speedPerc + 'x')
+            $('.player-settings-speed-reset')
+                .find('.player-settings-speed-perc')
+                .html(speedPerc + 'x')
         } else {
             speedEnabled = !speedEnabled
             $('.player-settings-speed-reset')
@@ -353,30 +339,27 @@ $(document).ready(function (e) {
         }
     })
 
-
-
     $(document).on('click', '.player-settings-mute', function (e) {
-        let sliderValue = $('.player-settings-slider .slider').prop("value")
+        let sliderValue = $('.player-settings-slider .slider').prop('value')
         if (sliderValue == 0) {
-            $('.player-settings-slider .slider').val(lastPlayerVolume).trigger("input")
+            $('.player-settings-slider .slider').val(lastPlayerVolume).trigger('input')
         } else {
             lastPlayerVolume = sliderValue
-            $('.player-settings-slider .slider').val(0).trigger("input")
+            $('.player-settings-slider .slider').val(0).trigger('input')
         }
     })
 
-
     $(document).on('input', '.player-settings-slider .slider', function (e) {
-        const min = $(this).prop("min")
-        const max = $(this).prop("max")
-        const val = $(this).prop("value")
-        let volume = (val - min) * 100 / (max - min)
+        const min = $(this).prop('min')
+        const max = $(this).prop('max')
+        const val = $(this).prop('value')
+        let volume = ((val - min) * 100) / (max - min)
 
         if (youTubePlayer.hasOwnProperty('getPlayerState')) {
             youTubePlayer.setVolume(volume)
         }
 
-        $(this).css("background-size", volume + '% 100%')
+        $(this).css('background-size', volume + '% 100%')
 
         let volumeIcon = $(this).parent().prev()
         if (val > 50) {

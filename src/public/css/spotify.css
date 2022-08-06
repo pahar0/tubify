@@ -5,19 +5,19 @@
 }
 
 @font-face {
-    font-family: "Plus Jakarta";
-    src: url("/css/fonts/PlusJakartaSans-Regular.woff") format('woff');
+    font-family: 'Plus Jakarta';
+    src: url('/css/fonts/PlusJakartaSans-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: "Plus Jakarta";
-    src: url("/css/fonts/PlusJakartaSans-ExtraBold.woff") format('woff');
+    font-family: 'Plus Jakarta';
+    src: url('/css/fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
     font-weight: bold;
 }
 
 body {
     background-color: #121212;
-    color: #FFF;
+    color: #fff;
     font-family: 'Plus Jakarta';
     cursor: default;
 }
@@ -60,7 +60,6 @@ body {
     margin: 10px 0;
 }
 
-
 .spotify-sidebar-playlist-name {
     font-size: 14px;
     opacity: 0.8;
@@ -84,7 +83,8 @@ body {
     justify-content: flex-end;
 }
 
-.spotify-sidebar .spotify-sidebar-bottom .spotify-sidebar-video {}
+.spotify-sidebar .spotify-sidebar-bottom .spotify-sidebar-video {
+}
 
 #YouTube-player {
     /*pointer-events: none;*/
@@ -110,7 +110,8 @@ body {
     overflow-x: hidden;
 }
 
-.spotify-header {}
+.spotify-header {
+}
 
 .spotify-playlist-info {
     display: flex;
@@ -155,7 +156,8 @@ body {
     height: 25px;
 }
 
-.spotify-controls-search {}
+.spotify-controls-search {
+}
 
 .spotify-songs {
     border-collapse: separate !important;
@@ -191,7 +193,7 @@ body {
 .spotify-track-row-albumName {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .spotify-track-row-playing {
@@ -266,7 +268,8 @@ body {
     margin-bottom: 5px;
 }
 
-.player-buttons {}
+.player-buttons {
+}
 
 .player-button {
     margin: 0 10px 0 10px;
@@ -275,7 +278,7 @@ body {
 .player-button-shuffle {
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/shuffle.png') center/contain;
     -webkit-mask: url('/images/player/shuffle.png') center/contain;
     opacity: 0.9;
@@ -288,7 +291,7 @@ body {
 .player-button-previous {
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/back.png') center/contain;
     -webkit-mask: url('/images/player/back.png') center/contain;
     opacity: 0.6;
@@ -316,7 +319,7 @@ body {
 .player-button-next {
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/next.png') center/contain;
     -webkit-mask: url('/images/player/next.png') center/contain;
     opacity: 0.6;
@@ -329,7 +332,7 @@ body {
 .player-button-repeat {
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/repeat.png') center/contain;
     -webkit-mask: url('/images/player/repeat.png') center/contain;
     opacity: 0.6;
@@ -349,7 +352,7 @@ body {
     width: 13px;
     height: 13px;
     margin-right: 7px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/speed-less.png') center/contain;
     -webkit-mask: url('/images/player/speed-less.png') center/contain;
     opacity: 0.6;
@@ -385,7 +388,7 @@ body {
     width: 13px;
     height: 13px;
     margin-left: 5px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/speed-more.png') center/contain;
     -webkit-mask: url('/images/player/speed-more.png') center/contain;
     opacity: 0.6;
@@ -394,8 +397,6 @@ body {
 .player-settings-speed-more:hover {
     opacity: 1;
 }
-
-
 
 .player-slider {
     display: flex;
@@ -440,7 +441,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 5px;
-    background-color: #FFF;
+    background-color: #fff;
     mask: url('/images/player/volume.png') center/contain no-repeat;
     -webkit-mask: url('/images/player/volume.png') center/contain no-repeat;
     opacity: 0.6;
@@ -450,11 +451,11 @@ body {
     opacity: 1;
 }
 
-.player-settings-mute:hover~.player-settings-slider .slider::-webkit-slider-thumb {
+.player-settings-mute:hover ~ .player-settings-slider .slider::-webkit-slider-thumb {
     opacity: 1;
 }
 
-.player-settings .player-settings-mute:hover~.player-settings-slider .slider {
+.player-settings .player-settings-mute:hover ~ .player-settings-slider .slider {
     background-image: linear-gradient(#1ed760, #1ed760);
 }
 
@@ -494,7 +495,7 @@ body {
     height: 13px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.6);
-    background-color: #FFF;
+    background-color: #fff;
     opacity: 0;
 }
 
@@ -514,5 +515,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 33%, .3);
+    background-color: hsla(0, 0%, 33%, 0.3);
 }

@@ -1,32 +1,35 @@
 {
-  "name": "tubify",
-  "version": "1.0.0",
-  "description": "pass all your spotify playlists to youtube and keep using a spotify gui to play them",
-  "main": "app.js",
-  "scripts": {
-    "dev": "nodemon app.js --config ./nodemon.json"
-  },
-  "author": "pahar0",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.12",
-    "csurf": "^1.11.0",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "nodemon": "^2.0.19",
-    "pug": "^3.0.2",
-    "spotify-web-api-node": "^5.0.2",
-    "valid-url": "^1.0.9"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "tubify"
-  },
-  "keywords": [
-    "spotify",
-    "youtube"
-  ]
+    "name": "tubify",
+    "version": "1.0.0",
+    "description": "pass all your spotify playlists to youtube and keep using a spotify gui to play them",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon src/app.js --config ./nodemon.json",
+        "dev": "npm start"
+    },
+    "author": "pahar0",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "csurf": "^1.11.0",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-session": "^1.17.3",
+        "pug": "^3.0.2",
+        "spotify-web-api-node": "^5.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "tubify"
+    },
+    "keywords": [
+        "spotify",
+        "youtube"
+    ],
+    "devDependencies": {
+        "eslint": "^8.21.0",
+        "eslint-plugin-import": "^2.26.0",
+        "nodemon": "^2.0.19",
+        "prettier": "2.7.1"
+    }
 }
