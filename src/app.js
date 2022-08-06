@@ -26,6 +26,7 @@
 
     app.get('/', require('./routes'))
     app.get('/login', require('./routes/login'))
+    
     app.get('/selectPlaylists', require('./routes/selectPlaylists'))
     app.post('/selectPlaylists', require('./routes/selectPlaylists'))
 
