@@ -1,13 +1,11 @@
-const config = require('../config')
 const fs = require('fs')
 
-const { youtubeSearch } = require('../utils/youtube')
-const { getAllSongs } = require('../utils/spotify')
+const config = require('../config')
+const { spotify, youtube } = require('../utils')
 
 const selectPlaylistsDebug = (req, res, next) => {
     if (config.debug) {
         const selectPlaylistsExample = fs.readFileSync('./debug/selectPlaylists.json')
-        //console.log(JSON.parse(selectPlaylistsExample));
         return res.render('selectPlaylists', { userPlaylists: JSON.parse(selectPlaylistsExample), csrfToken: req.csrfToken() })
     }
     next()
@@ -15,7 +13,6 @@ const selectPlaylistsDebug = (req, res, next) => {
 
 const selectPlaylistsGetTracks = async (req, res) => {
     const bodyPlaylistsSelected = req.body.playlists || []
-    //return res.send(res.locals.getUserPlaylists)
 
     if (typeof bodyPlaylistsSelected !== 'object') return res.send({ error: 'data sent is not an object' })
 
@@ -23,10 +20,7 @@ const selectPlaylistsGetTracks = async (req, res) => {
     const selectedPlaylists = req.session.getUserPlaylists.items.filter((value, index) => bodyPlaylistsSelected.includes(index))
     const playlistsDetails = []
     for await (const playlist of selectedPlaylists) {
-        //if (playlist.tracks.total > 4)
-        //    continue
-
-        let playlistAux = {
+        const playlistAux = {
             id: playlist.id,
             name: playlist.name,
             collaborative: playlist.collaborative,
@@ -37,7 +31,7 @@ const selectPlaylistsGetTracks = async (req, res) => {
             youtubeIDS: [],
         }
         try {
-            const tracksApi = await getAllSongs(playlist.id)
+            const tracksApi = await spotify.getAllSongs(playlist.id)
             playlistAux.tracks = tracksApi.reverse().map((track) => {
                 const name = track.track.name
                 const artists = track.track.artists.map((artist) => artist.name).join(', ')
@@ -57,13 +51,13 @@ const selectPlaylistsGetTracks = async (req, res) => {
                 }
             })
             for await (const [index, track] of playlistAux.tracks.entries()) {
-                const search = await youtubeSearch(`${track.artists} - ${track.name}`)
+                const search = await youtube.search(`${track.artists} - ${track.name}`)
                 const regexp = /(?<={"videoId":").*?(?=")/gm
                 playlistAux.tracks[index].youtubeIDS = [...new Set(search.data.match(regexp))].slice(0, 3)
                 playlistAux.youtubeIDS.push(playlistAux.tracks[index].youtubeIDS[0])
             }
         } catch (err) {
-            console.log(err)
+            console.error(err)
         }
         playlistsDetails.push(playlistAux)
     }

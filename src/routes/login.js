@@ -26,9 +26,9 @@ const login = async (req, res) => {
                 ...resp.data,
                 expires_date: Date.now() / 1000 + resp.data.expires_in,
             }
-            return res.redirect('/selectPlaylists')
+            return res.redirect('/')
         } catch (err) {
-            console.log(err)
+            console.error(err)
         }
     } else {
         const state = Math.random().toString(36).slice(2)

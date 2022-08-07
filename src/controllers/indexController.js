@@ -56,7 +56,7 @@ const indexGeneratePlaylists = async (req, res, next) => {
                 }
             })
             for await (const [index, track] of playlistAux.tracks.entries()) {
-                const search = await youtube(`${track.artists} - ${track.name}`)
+                const search = await youtube.search(`${track.artists} - ${track.name}`)
                 const regexp = /(?<={"videoId":").*?(?=")/gm
                 playlistAux.tracks[index].youtubeIDS = [...new Set(search.data.match(regexp))]
                 playlistAux.youtubeIDS.push(playlistAux.tracks[index].youtubeIDS[0])
@@ -112,7 +112,7 @@ const indexGenerateTopSongsPlaylist = async (req, res, next) => {
             }
         })
         for await (const [index, track] of playlistTopSongsAux.tracks.entries()) {
-            const search = await youtube(`${track.artists} - ${track.name}`)
+            const search = await youtube.search(`${track.artists} - ${track.name}`)
             const regexp = /(?<={"videoId":").*?(?=")/gm
             playlistTopSongsAux.tracks[index].youtubeIDS = [...new Set(search.data.match(regexp))].slice(0, 3)
             playlistTopSongsAux.youtubeIDS.push(playlistTopSongsAux.tracks[index].youtubeIDS[0])
@@ -124,11 +124,13 @@ const indexGenerateTopSongsPlaylist = async (req, res, next) => {
     next()
 }
 
-const indexRender = (req, res) =>
-    res.render('index', {
-        userPlaylists: res.locals.getUserPlaylists,
-        csrfToken: req.csrfToken(),
-    })
+const indexRender = (req, res) => {
+    if (req.session.playlistsDetails) {
+        return res.render('index', { playlistsDetails: req.session.playlistsDetails })
+    } else {
+        return res.redirect('/selectPlaylists')
+    }
+}
 
 module.exports = {
     indexDebug,

@@ -62,16 +62,17 @@ $(document).ready(function (e) {
         $.ajax({
             type: 'POST',
             url: '/selectPlaylists',
-            data: JSON.stringify({ playlists: playlists }),
             contentType: 'application/json',
             headers: {
                 'CSRF-Token': csrfToken,
             },
+            data: JSON.stringify({ playlists: playlists }),
         })
             .done((response) => {
                 if (!response.error) {
-                } else {
                     console.log(response)
+                    window.location.replace('/')
+                } else {
                 }
             })
             .fail(function (response, status) {
