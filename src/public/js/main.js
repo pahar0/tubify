@@ -98,6 +98,11 @@ $(document).ready(function () {
     $('.spotify-controls').css('background-color', randomColor)
     $('.spotify-controls').css('background-image', `linear-gradient(${shadeRandomColor}, #121212)`)
 
+    $(document).on('click', '.spotify-sidebar-playlist-name', function (e) {
+        const playlistSelected = Number($(this).attr('data-index'))
+        window.location = `/?playlistSelected=${playlistSelected}`
+    })
+
     $(document).on('click', '.player-button-shuffle', function (e) {
         shuffleMode = !shuffleMode
         if (shuffleMode) {

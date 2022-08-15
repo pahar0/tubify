@@ -126,7 +126,8 @@ const indexGenerateTopSongsPlaylist = async (req, res, next) => {
 
 const indexRender = (req, res) => {
     if (req.session.playlistsDetails) {
-        return res.render('index', { playlistsDetails: req.session.playlistsDetails })
+        const playlistSelected = Number(req.query.playlistSelected) < req.session.playlistsDetails.length ? Number(req.query.playlistSelected) : 0
+        return res.render('index', { playlistsDetails: req.session.playlistsDetails, playlistSelected: playlistSelected })
     } else {
         return res.redirect('/selectPlaylists')
     }

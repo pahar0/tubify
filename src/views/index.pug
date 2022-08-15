@@ -10,7 +10,7 @@ html
 					.spotify-sidebar-playlists
 						each playlist, index in playlistsDetails
 							.spotify-sidebar-playlist 
-								.spotify-sidebar-playlist-name=playlist.name
+								.spotify-sidebar-playlist-name(data-index=index)=playlist.name
 								.spotify-sidebar-playlist-icon
 				.spotify-sidebar-bottom
 					.spotify-sidebar-video
@@ -22,9 +22,9 @@ html
 					.spotify-header 
 						.spotify-playlist-info
 							.spotify-playlist-cover
-								img#playlist-cover(src=playlistsDetails[0].images[0].url width="232" height="232")
+								img#playlist-cover(src=playlistsDetails[playlistSelected].images[0].url width="232" height="232")
 							.spotify-playlist-name
-								=playlistsDetails[0].name
+								=playlistsDetails[playlistSelected].name
 					.spotify-controls
 						.spotify-controls-buttons
 							.spotify-controls-buttons-play
@@ -39,7 +39,7 @@ html
 							div(style={width: '100px'}).text-end
 								img(src="/images/player/clock.png" style={width: '18px', filter: 'invert(100%) sepia(100%) saturate(0%) hue-rotate(238deg) brightness(104%) contrast(103%)'})
 							div(style={width: '50px'})
-						each song, index in playlistsDetails[0].tracks
+						each song, index in playlistsDetails[playlistSelected].tracks
 							.spotify-track-row.d-flex.align-items-center(data-index=index data-songName=song.name data-artistsName=song.artists data-albumName=song.album data-youtubeids=song.youtubeIDS.join('#') data-cover=(song.images) ? song.images[1].url : 'images/no-cover.png' )
 								div(style='min-width:20px;width:20px;min-height:20px;height:20px;margin:0 15px;color:#b3b3b3;').spotify-play-button.text-center=index+1
 								div(style='width:650px').d-flex.align-items-center
@@ -83,7 +83,7 @@ html
 				.player-settings-slider
 					input.slider(type='range' min=0 max=100 step=1 value=100 draggable="false")
 		script.
-			let playlistsDetails = !{JSON.stringify(playlistsDetails)}
+			let playlistsDetails = !{JSON.stringify(playlistsDetails)}, playlistSelected = !{playlistSelected}
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
 		script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
 		script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-tubeplayer/2.1.0/jquery.tubeplayer.min.js')

@@ -49,6 +49,7 @@ body {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .spotify-sidebar-playlist {
