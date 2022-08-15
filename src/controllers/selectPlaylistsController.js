@@ -5,8 +5,11 @@ const { spotify, youtube } = require('../utils')
 
 const selectPlaylistsDebug = (req, res, next) => {
     if (config.debug) {
-        const selectPlaylistsExample = fs.readFileSync('./debug/selectPlaylists.json')
-        return res.render('selectPlaylists', { userPlaylists: JSON.parse(selectPlaylistsExample), csrfToken: req.csrfToken() })
+        const selectPlaylistsExample = fs.readFileSync(path.join(__dirname, '../debug/selectPlaylists.json'), { encoding: 'utf8', flag: 'r' })
+        return res.render('selectPlaylists', {
+            userPlaylists: JSON.parse(selectPlaylistsExample),
+            csrfToken: req.csrfToken(),
+        })
     }
     next()
 }

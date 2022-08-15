@@ -14,7 +14,7 @@ html
 								.spotify-sidebar-playlist-icon
 				.spotify-sidebar-bottom
 					.spotify-sidebar-video
-						#YouTube-player
+						#youtubePlayer
 					.spotify-sidebar-cover
 						img(width="270" height="270" src="/images/transparent.png")
 			.spotify-content
@@ -35,15 +35,16 @@ html
 							div(style={width: '20px', margin: '15px'}).text-center #
 							div(style={width: '650px'}) TITLE
 							div(style={width: '470px'}) ALBUM
-							div(style={width: '270px'}) DATE
-							div(style={width: '100px'}).text-end LENGTH
+							div(style={width: '270px'}) DATE ADDED
+							div(style={width: '100px'}).text-end
+								img(src="/images/player/clock.png" style={width: '18px', filter: 'invert(100%) sepia(100%) saturate(0%) hue-rotate(238deg) brightness(104%) contrast(103%)'})
 							div(style={width: '50px'})
 						each song, index in playlistsDetails[0].tracks
 							.spotify-track-row.d-flex.align-items-center(data-index=index data-songName=song.name data-artistsName=song.artists data-albumName=song.album data-youtubeids=song.youtubeIDS.join('#') data-cover=(song.images) ? song.images[1].url : 'images/no-cover.png' )
-								div(style='min-width:20px;width:20px;min-height:20px;height:20px;margin:0 15px;color:#b3b3b3;').spotify-play-button.text-center=index
+								div(style='min-width:20px;width:20px;min-height:20px;height:20px;margin:0 15px;color:#b3b3b3;').spotify-play-button.text-center=index+1
 								div(style='width:650px').d-flex.align-items-center
 									img.me-2(src=(song.images) ? song.images[2].url : '/images/no-cover.png' width="40" height="40")
-									div
+									div(style={"min-width": "150px","white-space": "nowrap", "text-overflow": "ellipsis","overflow": "hidden" })
 										.spotify-track-row-songName=song.name
 										.spotify-track-row-artistsName=song.artists
 								div(style={width: '470px'}).spotify-track-row-albumName=song.album
@@ -81,9 +82,9 @@ html
 				.player-settings-mute
 				.player-settings-slider
 					input.slider(type='range' min=0 max=100 step=1 value=100 draggable="false")
+		script.
+			let playlistsDetails = !{JSON.stringify(playlistsDetails)}
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
 		script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-tubeplayer/2.1.0/jquery.tubeplayer.min.js')
 		script(src="/js/main.js")
-		script.
-			let playlistYoutubeIDS = ["!{playlistsDetails[0].youtubeIDS.join('","')}"]
-		script(src="/js/player.js")

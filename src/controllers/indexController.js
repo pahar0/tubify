@@ -1,13 +1,13 @@
 const fs = require('fs')
-
+const path = require('path')
 const config = require('../config')
 const { spotify, youtube } = require('../utils')
 
 const indexDebug = (req, res, next) => {
     if (config.debug) {
-        const indexExample = fs.readFileSync('./debug/index.json')
+        const indexExample = fs.readFileSync(path.join(__dirname, '../debug/index.json'), { encoding: 'utf8', flag: 'r' })
         return res.render('index', {
-            userPlaylists: JSON.parse(indexExample),
+            playlistsDetails: JSON.parse(indexExample),
             csrfToken: req.csrfToken(),
         })
     }

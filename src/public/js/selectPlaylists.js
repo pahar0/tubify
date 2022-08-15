@@ -1,41 +1,6 @@
-function pluralize(count, noun, suffix = 's') {
-    return `${noun}${Number(count) !== 1 ? suffix : ''}`
-}
-
-function secondsToString(e) {
-    const h = Math.floor(e / 3600)
-            .toString()
-            .padStart(1, '0'),
-        m = Math.floor((e % 3600) / 60)
-            .toString()
-            .padStart(1, '0'),
-        s = Math.floor(e % 60)
-            .toString()
-            .padStart(1, '0')
-    return (
-        (h == 0 ? '' : h + ' ' + pluralize(h, 'hour') + ' ') +
-        (m == 0 ? '' : m + ' ' + pluralize(m, 'minute') + ' ') +
-        (s == 0 ? '' : s + ' ' + pluralize(s, 'second') + ' ')
-    )
-}
-
-let totalSeconds = 0
-
-function calculateAverageTime() {
-    totalSeconds = 0
-    $('.selected').each(function () {
-        totalSeconds += Number($(this).attr('data-avg'))
-    })
-    if (totalSeconds == 0) {
-        $('.time').html('Select at least one playlist')
-        $('.convert').addClass('disabled')
-    } else {
-        $('.time').html(secondsToString(totalSeconds))
-        $('.convert').removeClass('disabled')
-    }
-}
-
 $(document).ready(function (e) {
+    let totalSeconds = 0
+
     $('.select-playlists-playlist').click(function () {
         $(this).toggleClass('selected')
         calculateAverageTime()
@@ -79,4 +44,39 @@ $(document).ready(function (e) {
                 console.log(response)
             })
     })
+
+    function pluralize(count, noun, suffix = 's') {
+        return `${noun}${Number(count) !== 1 ? suffix : ''}`
+    }
+
+    function secondsToString(e) {
+        const h = Math.floor(e / 3600)
+                .toString()
+                .padStart(1, '0'),
+            m = Math.floor((e % 3600) / 60)
+                .toString()
+                .padStart(1, '0'),
+            s = Math.floor(e % 60)
+                .toString()
+                .padStart(1, '0')
+        return (
+            (h == 0 ? '' : h + ' ' + pluralize(h, 'hour') + ' ') +
+            (m == 0 ? '' : m + ' ' + pluralize(m, 'minute') + ' ') +
+            (s == 0 ? '' : s + ' ' + pluralize(s, 'second') + ' ')
+        )
+    }
+
+    function calculateAverageTime() {
+        totalSeconds = 0
+        $('.selected').each(function () {
+            totalSeconds += Number($(this).attr('data-avg'))
+        })
+        if (totalSeconds == 0) {
+            $('.time').html('Select at least one playlist')
+            $('.convert').addClass('disabled')
+        } else {
+            $('.time').html(secondsToString(totalSeconds))
+            $('.convert').removeClass('disabled')
+        }
+    }
 })

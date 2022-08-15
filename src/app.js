@@ -8,6 +8,7 @@ const config = require('./config')
 
 app.disable('x-powered-by')
 app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, 'views'))
 app.set('json spaces', 4)
 
 app.use(
@@ -22,7 +23,6 @@ app.use(csrf())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.set('views', path.join(__dirname, 'views'))
 
 app.get('/', require('./routes'))
 app.get('/login', require('./routes/login'))

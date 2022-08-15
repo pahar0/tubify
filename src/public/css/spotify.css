@@ -178,16 +178,10 @@ body {
 .spotify-track-row .spotify-track-row-songName {
     padding-left: 5px;
     font-size: 15px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .spotify-track-row .spotify-track-row-artistsName {
     padding-left: 5px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .spotify-track-row-albumName {
