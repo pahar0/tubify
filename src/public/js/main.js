@@ -2,8 +2,7 @@ $(document).ready(function () {
     const randomColor = getRandomColor(),
         shadeRandomColor = adjust(randomColor, -50)
 
-    let playlistSelected = 0,
-        playlistCurrentSongIndex = 0,
+    let playlistCurrentSongIndex = 0,
         playedSongsIndexes = [],
         youtubeTrackFallback = 0,
         lastPlayerVolume = 0,
