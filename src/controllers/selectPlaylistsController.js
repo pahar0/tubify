@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 
 const config = require('../config')
 const { spotify, youtube } = require('../utils')
@@ -8,7 +9,6 @@ const selectPlaylistsDebug = (req, res, next) => {
         const selectPlaylistsExample = fs.readFileSync(path.join(__dirname, '../debug/selectPlaylists.json'), { encoding: 'utf8', flag: 'r' })
         return res.render('selectPlaylists', {
             userPlaylists: JSON.parse(selectPlaylistsExample),
-            csrfToken: req.csrfToken(),
         })
     }
     next()
@@ -66,6 +66,7 @@ const selectPlaylistsGetTracks = async (req, res) => {
     }
     req.session.playlistsDetails = playlistsDetails
     const durationFinish = Date.now() / 1000 - durationStart
+    console.log(durationFinish)
     res.send({
         action: 'completed',
         duration: durationFinish,
@@ -73,7 +74,7 @@ const selectPlaylistsGetTracks = async (req, res) => {
 }
 
 const selectPlaylistsRender = (req, res) => {
-    return res.render('selectPlaylists', { userPlaylists: res.locals.getUserPlaylists, csrfToken: req.csrfToken() })
+    return res.render('selectPlaylists', { userPlaylists: res.locals.getUserPlaylists })
 }
 
 module.exports = { selectPlaylistsDebug, selectPlaylistsGetTracks, selectPlaylistsRender }

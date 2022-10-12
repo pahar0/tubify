@@ -6,9 +6,11 @@ const { spotify, youtube } = require('../utils')
 const indexDebug = (req, res, next) => {
     if (config.debug) {
         const indexExample = fs.readFileSync(path.join(__dirname, '../debug/index.json'), { encoding: 'utf8', flag: 'r' })
+        const playlistsDetails = JSON.parse(indexExample)
+        const playlistSelected = Number(req.query.playlistSelected) < playlistsDetails.length ? Number(req.query.playlistSelected) : 0
         return res.render('index', {
-            playlistsDetails: JSON.parse(indexExample),
-            csrfToken: req.csrfToken(),
+            playlistsDetails: playlistsDetails,
+            playlistSelected: playlistSelected,
         })
     }
     next()

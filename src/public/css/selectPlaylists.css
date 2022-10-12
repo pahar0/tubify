@@ -24,10 +24,12 @@
 
 .right {
     width: 30%;
+    min-width: 300px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .select-playlists {
@@ -139,10 +141,10 @@
 
 .conversion {
     margin-top: 15px;
+    text-align: center;
 }
 
 .time {
-    padding-left: 5px;
     font-size: 23px;
     color: #1ed760;
 }

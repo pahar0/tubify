@@ -150,11 +150,25 @@ body {
     height: 56px;
     background-color: #1ed760;
     border-radius: 50%;
+    user-select: none;
+}
+
+.spotify-controls-buttons-play:hover {
+    transform: scale(1.05);
+}
+
+.spotify-controls-buttons-play:active {
+    transform: scale(1);
+    opacity: 0.85;
 }
 
 .spotify-controls-buttons-play img {
     width: 25px;
     height: 25px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .spotify-controls-search {
@@ -304,11 +318,24 @@ body {
     height: 32px;
     background-color: white;
     border-radius: 50%;
+    user-select: none;
+}
+
+.player-button-play:hover {
+    transform: scale(1.05);
+}
+
+.player-button-play:active {
+    transform: scale(1);
 }
 
 .player-button-play img {
     width: 16px;
     height: 16px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .player-button-next {

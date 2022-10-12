@@ -10,21 +10,21 @@ html
 			.content
 				.left
 					.tubify
+						img(src="/images/tubify.png" width="150")
+						br
 						| tubify
 					.description
 						| These are all your playlists. Select which ones do you want to use in tubify.
 						br
-						| Keep in mind that takes half a second (0.500 ms) to convert 
+						| Keep in mind that takes 
+						b(style='color:#1ed760') 1 second
+						|  to convert 
 						b(style='color:#1ed760') one
 						|  single track.
 						br
 						| You can import any of your playlists later, so dont worry if you forget a playlist.
 						.mt-3
 							| Select / deselect a playlist to increment / reduce the total conversion time.
-					.conversion 
-						| The actual conversion will take: 
-						.time 
-							| Select at least one playlist
 					.buttons
 						.button.deselect-all
 							| Deselect all
@@ -40,8 +40,8 @@ html
 							.header-name
 								| PLAYLIST
 						each playlist, index in userPlaylists.items
-							.select-playlists-playlist(data-index=index data-avg=(playlist.tracks.total * 0.5))
-								.playlist-avgDuration=(playlist.tracks.total * 0.5)
+							.select-playlists-playlist(data-index=index data-avg=(playlist.tracks.total * 1))
+								.playlist-avgDuration=(playlist.tracks.total * 1)
 								.playlist-totalTracks=playlist.tracks.total
 								.playlist-name=playlist.name
 						.select-playlists-footer
@@ -53,6 +53,10 @@ html
 				.right 
 					.button.convert.disabled
 						| Convert
+					.conversion 
+						| The actual conversion will take
+						.time 
+							| Select at least one playlist
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
 		script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
 		script(src="/js/selectPlaylists.js")

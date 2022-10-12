@@ -1,5 +1,6 @@
 const config = require('../config')
 const axios = require('axios')
+const { spotify } = require('../utils')
 
 const login = async (req, res) => {
     if (req.session.isLoggedIn) return res.redirect('/')
@@ -26,6 +27,8 @@ const login = async (req, res) => {
                 ...resp.data,
                 expires_date: Date.now() / 1000 + resp.data.expires_in,
             }
+            spotify.setAccessToken(req.session.spotifyTokens.access_token)
+            spotify.setRefreshToken(req.session.spotifyTokens.refresh_token)
             return res.redirect('/')
         } catch (err) {
             console.error(err)

@@ -1,6 +1,4 @@
 $(document).ready(function (e) {
-    let totalSeconds = 0
-
     $('.select-playlists-playlist').click(function () {
         $(this).toggleClass('selected')
         calculateAverageTime()
@@ -23,14 +21,11 @@ $(document).ready(function (e) {
                 return Number($(v).attr('data-index'))
             })
             .get()
-        const csrfToken = $('meta[name=csrf-token]').attr('content')
+
         $.ajax({
             type: 'POST',
             url: '/selectPlaylists',
             contentType: 'application/json',
-            headers: {
-                'CSRF-Token': csrfToken,
-            },
             data: JSON.stringify({ playlists: playlists }),
         })
             .done((response) => {
@@ -38,6 +33,7 @@ $(document).ready(function (e) {
                     console.log(response)
                     window.location.replace('/')
                 } else {
+                    console.log(response)
                 }
             })
             .fail(function (response, status) {
@@ -67,11 +63,11 @@ $(document).ready(function (e) {
     }
 
     function calculateAverageTime() {
-        totalSeconds = 0
+        let totalSeconds = 0
         $('.selected').each(function () {
             totalSeconds += Number($(this).attr('data-avg'))
         })
-        if (totalSeconds == 0) {
+        if (totalSeconds === 0) {
             $('.time').html('Select at least one playlist')
             $('.convert').addClass('disabled')
         } else {
