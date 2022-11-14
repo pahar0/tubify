@@ -65,7 +65,7 @@ const selectPlaylistsGetTracks = async (req, res) => {
         playlistsDetails.push(playlistAux)
     }
     req.session.playlistsDetails = playlistsDetails
-    const durationFinish = Date.now() / 1000 - durationStart
+    const durationFinish = (Date.now() / 1000 - durationStart).toFixed(2)
     console.log(durationFinish)
     res.send({
         action: 'completed',

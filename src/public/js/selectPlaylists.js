@@ -15,7 +15,8 @@ $(document).ready(function (e) {
     })
 
     $('.convert').click(function () {
-        $(this).addClass('disabled')
+        const button = $(this)
+        button.addClass('disabled')
         const playlists = $('.selected')
             .map(function (i, v) {
                 return Number($(v).attr('data-index'))
@@ -30,8 +31,10 @@ $(document).ready(function (e) {
         })
             .done((response) => {
                 if (!response.error) {
-                    console.log(response)
-                    window.location.replace('/')
+                    button.html(`Completed in ${response.duration} secs`)
+                    setTimeout(function () {
+                        window.location.replace('/')
+                    }, 3000)
                 } else {
                     console.log(response)
                 }

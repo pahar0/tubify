@@ -11,7 +11,7 @@ $(document).ready(function () {
         repeatMode = 0,
         speedEnabled = false,
         speedPerc = 1,
-        lastDirection = 0 // 0 RIGHT - 1 LEFT
+        lastDirection = 1 // -1 LEFT / 1 RIGHT
 
     $('#youtubePlayer').tubeplayer({
         // Plugin init params
@@ -81,9 +81,9 @@ $(document).ready(function () {
         onErrorNotFound: function () {}, // if a video cant be found
         onErrorNotEmbeddable: function () {
             // if a video isnt embeddable
-            if (lastDirection == 0) {
+            if (lastDirection == 1) {
                 nextVideo()
-            } else if (lastDirection == 1) {
+            } else if (lastDirection == -1) {
                 prevVideo()
             }
         },
@@ -387,7 +387,7 @@ $(document).ready(function () {
     })
 
     function prevVideo() {
-        lastDirection = 1
+        lastDirection = -1
         let previousSong = 0
         if (playedSongsIndexes.length > 1) {
             playedSongsIndexes.pop()
@@ -398,7 +398,7 @@ $(document).ready(function () {
     }
 
     function nextVideo(click = false) {
-        lastDirection = 0
+        lastDirection = 1
         if (click) {
             if (shuffleMode) {
                 playlistCurrentSongIndex = generateRandom(playlistsDetails[playlistSelected].tracks.length, playlistCurrentSongIndex)

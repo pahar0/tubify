@@ -90,7 +90,6 @@ const indexGenerateTopSongsPlaylist = async (req, res, next) => {
         youtubeIDS: [],
     }
     try {
-        spotify.setAccessToken(req.session.spotifyTokens.access_token)
         const playlistTopSongs = await spotify.getMyTopTracks({
             time_range: 'short_term',
             limit: 50,

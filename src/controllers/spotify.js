@@ -1,14 +1,19 @@
 const { spotify } = require('../utils')
 
-const spotifyRefreshToken = async (req, res, next) => {
+async function spotifyRefreshToken(req, res, next) {
     if (req.session.spotifyTokens.expires_date <= Date.now() / 1000) {
+        console.log('expired token -> login')
+        req.session.isLoggedIn = false
+        return res.redirect('/login')
+    }
+    if (req.session.spotifyTokens.expires_date - 450000 >= Date.now() / 1000) {
+        console.log('almost expired token -> refresh')
         try {
             const newTokens = await spotify.refreshAccessToken()
             req.session.spotifyTokens = {
                 ...newTokens.body,
                 expires_date: Date.now() / 1000 + newTokens.body.expires_in,
             }
-            console.log('token refreshed')
         } catch (err) {
             console.error(err)
         }
@@ -16,7 +21,7 @@ const spotifyRefreshToken = async (req, res, next) => {
     next()
 }
 
-const spotifyGetUserPlaylists = async (req, res, next) => {
+async function spotifyGetUserPlaylists(req, res, next) {
     try {
         const getUserPlaylists = await spotify.getUserPlaylists({ limit: 50 })
         req.session.getUserPlaylists = getUserPlaylists.body
